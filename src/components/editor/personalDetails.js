@@ -90,7 +90,7 @@ const PersonalDetails = () => {
 
   return (
     <div className="personalDetails-container">
-      <p>Personal Details</p>
+      <h6 style={{margin:"1rem 0"}}>Personal Details</h6>
       <Container>
         {form.map((e) => {
           return (

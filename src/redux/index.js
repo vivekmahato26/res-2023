@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import personalDetailsSlice from "./slices/personalDetailsSlice";
+import summarySlice from "./slices/summarySlice";
 
 export default configureStore({
     reducer : {
-        PersonalDetails : personalDetailsSlice
+        PersonalDetails : personalDetailsSlice,
+        Summary: summarySlice
     }
 })
