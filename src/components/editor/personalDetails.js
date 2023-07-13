@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { saveData } from "../../redux/slices/personalDetailsSlice";
 import { Row, Col, Container, Label, Input } from "reactstrap";
+import { v4 as uuid } from "uuid";
 const PersonalDetails = () => {
   const personalDetailsState = useSelector(
     (state) => state.PersonalDetails.value
@@ -94,7 +95,7 @@ const PersonalDetails = () => {
       <Container>
         {form.map((e) => {
           return (
-            <Row>
+            <Row key={uuid()}>
               <Col xs="6">
                 <Label>{e[1].label}</Label>
                 <Input

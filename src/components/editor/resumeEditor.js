@@ -14,8 +14,8 @@ import PersonalDetails from "./personalDetails";
 import Section from "./section";
 import Summary from "./summary";
 const ResumeEditor = () => {
-    const educationState = useSelector(state => state.Education.value);
-    const employmentState = useSelector(state => state.Employment.value);
+    // const educationState = useSelector(state => state.Education.value);
+    // const employmentState = useSelector(state => state.Employment.value);
   const employment = {
     inputs: [
       {
@@ -57,7 +57,7 @@ const ResumeEditor = () => {
         modify: employmentModify,
         remove: employmentRemove,
       },
-      state: employmentState
+      state: "Employment"
     },
   };
   const education = {
@@ -101,9 +101,10 @@ const ResumeEditor = () => {
         modify: educationModify,
         remove: educationRemove,
       },
-      state: educationState
+      state: "Education"
     },
   };
+  console.log("rerender1");
   return (
     <div>
       <Header />
