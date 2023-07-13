@@ -9,7 +9,7 @@ const educationSlice = createSlice({
     add: (state, action) => {
       state.value.push({
         id: uuid().split("-").join(""),
-        school: "",
+        school: "Untitled",
         degree: "",
         start: "",
         end: "",

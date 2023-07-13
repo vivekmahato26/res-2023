@@ -93,9 +93,9 @@ const PersonalDetails = () => {
     <div className="personalDetails-container">
       <h6 style={{margin:"1rem 0"}}>Personal Details</h6>
       <Container>
-        {form.map((e) => {
+        {form.map((e,i) => {
           return (
-            <Row key={uuid()}>
+            <Row key={i}>
               <Col xs="6">
                 <Label>{e[1].label}</Label>
                 <Input

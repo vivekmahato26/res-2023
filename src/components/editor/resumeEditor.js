@@ -13,6 +13,7 @@ import Header from "./header";
 import PersonalDetails from "./personalDetails";
 import Section from "./section";
 import Summary from "./summary";
+import Accordian from "../utils/accordian";
 const ResumeEditor = () => {
     // const educationState = useSelector(state => state.Education.value);
     // const employmentState = useSelector(state => state.Employment.value);
@@ -110,6 +111,7 @@ const ResumeEditor = () => {
       <Header />
       <PersonalDetails />
       <Summary />
+
       <Section formData={education} />
       <Section formData={employment} />
     </div>

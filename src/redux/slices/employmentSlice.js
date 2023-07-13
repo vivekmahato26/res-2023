@@ -9,7 +9,7 @@ const employmentSlice = createSlice({
     add: (state, action) => {
       state.value.push({
         id: uuid().split("-").join(""),
-        jobTitle: "",
+        jobTitle: "Untitled",
         company: "",
         start: "",
         end: "",
